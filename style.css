@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/*font-family: 'Fraunces', serif;
+font-family: Montserrat' sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30,38%,92%);
+    font-size: 34px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.0em;
+
+}
+.container {
+    margin: none;
+    padding: none;
+    max-width: 100%;
+    display: inline;
+    position: relative;
+}
+p {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em;
+    font-family: "Fraunces" sans-serif;
+    font-size: 20px;
+}
+h1, .price{
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+}
+h2 { 
+    text-transform: uppercase;
+font-weight: 500;
+color: hsl(228, 12%, 48%);
+letter-spacing: 5px;
+font-size: 20px;
+
+}
+
+.current-price {
+    margin: 0.75em 0.75em 1em 0;
+    color: hsl(158, 36%, 37%);
+    font-size: 27px;
+    font-weight: 1000;
+    font-family: 'Fraunces', sans-serif;
+
+}
+.regular-price {
+    text-decoration: line-through;
+    font-size: 16px;
+}
+h1 {
+    color:hsl(212, 21%, 14%);
+    line-height: 1em;
+    margin: 0.7em 0 0.7em 0;
+    font-family: 'Fraunces',serif;
+    font-weight: 800;
+    font-size: 34px;
+}
+
+.attribution {
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 12%, 48%)
+}
+.price-tag {
+    display: flex;
+    align-items: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.perfume-details {
+    background-color: #fff;
+    max-width: 800%;
+    text-align: left;
+    padding-left: 0.5em;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    font-size: 34px;
+    margin-left: 0.2em;
+    margin-right: 0.1em;
+    padding: 1.5em;
+
+}
+.grid {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(30,38%,92%);
+    overflow: hidden;
+    border-radius: 0.5em;
+
+}
+.button {
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 0.2em;
+    display: flex;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-weight: 700;
+
+}
+.button:hover {
+    background-color: hsl(157, 88%, 10%);
+}
+@media only screen and (max-width: 628px) {
+    .grid{
+        grid-template-columns: 1fr;
+
+    }
+}
